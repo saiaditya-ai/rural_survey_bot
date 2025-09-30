@@ -38,6 +38,7 @@ python -m uvicorn app_simple:app --host 0.0.0.0 --port 8000 --reload
 cd frontend
 npx serve -l 5173
 ```
+Visit [http://localhost:8000](http://localhost:8000) to check the status of the backend and its docs
 Open [http://localhost:5173](http://localhost:5173) to use the demo.
 
 ### 2. Full System (database + services)
