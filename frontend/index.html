@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Rural Services Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <div class="logo__emblem"></div>
+            <div class="logo__text">
+                <h1>National Rural Services Assistant</h1>
+                <p>Digital Seva for Bharat</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="chat-container">
+        <div id="chat-log" class="chat-log"></div>
+
+        <div id="consent-screen" class="consent-screen">
+            <div class="consent-content">
+                <div class="language-picker">
+                    <label for="language-select">Preferred language</label>
+                    <select id="language-select" aria-label="Select language">
+                        <option value="english" selected>English</option>
+                        <option value="hindi">हिन्दी</option>
+                        <option value="telugu">తెలుగు</option>
+                    </select>
+                </div>
+                <h2 id="consent-title">Help Improve Rural Services</h2>
+                <p id="consent-description">Would you be willing to participate in a brief, anonymous survey about local governance and services? Your feedback is valuable.</p>
+                <div class="consent-actions">
+                    <button id="consent-yes" class="button-primary">Yes, I'll help</button>
+                    <button id="consent-no">No, take me to the FAQ</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="suggestions-bar" class="suggestions-bar"></div>
+    </main>
+
+    <footer class="chat-footer">
+        <form id="chat-form" class="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" disabled />
+            <button type="submit" id="send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" /></svg>
+            </button>
+        </form>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
